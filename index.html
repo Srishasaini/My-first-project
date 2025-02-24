@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+
+        <div class="logo"><img src="images/logo.png" id="logo" alt="logo is not visible"></div>
+        <div class="search-location">
+            <input type="text" placeholder="Search for location" id="location-input">
+            <button id="search-btn">Search</button>
+
+        </div>
+        <div class="get-location">
+            <img id="get-location-btn" src="images/icons8-my-location-50.png">
+        </div>
+    </header>
+    <main>
+        <section class="main-1">
+            <div class="first-section">
+                <div class="txt-content">
+                    <h1>Weather Info</h1>
+
+                    <p>Stay ahead of the curve – get instant updates </p>
+                </div>
+                <div class="image-content">
+                    <img src="images/logo-removebg-preview.png" alt="pic">
+                </div>
+            </div>
+            <div class="second-section">
+                <div class="image-2">
+                    <img src="images/air-quality.png" alt="">
+                </div>
+                <div class="carousel-wrapper">
+                    <div class="carousel" id="carousel">
+                        <div class="slide-container"><img
+                                src="https://plus.unsplash.com/premium_photo-1669809948017-518b5d800d73?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D"
+                                alt="Slide 1"></div>
+                        <div class="slide-container"><img
+                                src="https://images.unsplash.com/photo-1601134467661-3d775b999c8b?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D"
+                                alt="Slide 2"></div>
+                        <div class="slide-container"><img
+                                src="https://images.unsplash.com/photo-1514632595-4944383f2737?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D"
+                                alt="Slide 3"></div>
+                        <div class="slide-container"><img
+                                src="https://images.unsplash.com/photo-1562155618-e1a8bc2eb04f?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D"
+                                alt="Slide 4"></div>
+                        <div class="slide-container"><img
+                                src="https://images.unsplash.com/photo-1580193813605-a5c78b4ee01a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D"
+                                alt="Slide 5"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="main-2">
+            <!-- Current Weather Section -->
+            <section class="current-weather">
+                <div class="weather-info">
+                    <div class="weather-icon">
+                        <h1 id="data_name">.</h1>
+                        <!-- Weather icon (you can replace with an actual image or icon library) -->
+                        <img src="/images/cloud.png" alt="Error" class="weather-image">
+                        <div id="date-time">Loading..</div>
+                    </div>
+
+
+
+                    <div class="temperature">
+                        <h1 id="current-temp">29°C</h1>
+                        <p id="weather-description">Haze</p>
+                        <p id="Feels">Feels like: 30°C</p>
+                    </div>
+                    <div class="weather-details">
+                        <div class="weather-detail">
+                            
+                            <p id="wind-speed">Wind: 5 km/h</p>
+                            <p id="humidity">Humidity: 69%</p>
+                        </div>
+                        <div class="weather-detail">
+                            <p id="visibility">Visibility: 4 km</p>
+                            <p id="pressure">Pressure: 1011 mb</p>
+                           
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 10-Day Forecast Section -->
+            <section class="forecast">
+                <h2>5 Day Forecast</h2>
+                <div class="forecast-cards">
+                    <div class="forecast-card">
+                        Loading...
+                    </div>
+                </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <div>&copy  Weather Info </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
