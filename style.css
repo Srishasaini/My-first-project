@@ -1,0 +1,275 @@
+/* Reset some default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Georgia', serif;
+   
+    /* color: #f1faee; Light text color */
+    background:rgba(201, 203, 204,0.1) url("https://www.awxcdn.com/adc-assets/images/hero/1/1024x450.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+/* Header Styling */
+header {
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #457b9d; /* A lighter shade of blue*/
+}
+#logo{
+  height: 48px;
+  width: 140px;
+  border: none;
+  border-radius: 60%;
+}
+.search-location{
+    display: flex;
+}
+.search-location input {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.search-location button {
+    padding: 10px;
+    color: #457b9d;
+    cursor: pointer;
+    background-color: #0b63de;
+    color: rgb(37, 37, 37);
+    border-radius: 15px;
+    margin-left: 12px;
+
+}
+ #search-btn{
+   
+    font-size: 20px;
+    font-weight: 700;
+    /* border-radius: 15px; */
+    width: 80%;
+    /* max-width: 80%; */
+    /* padding: 10px; */
+}
+.get-location{
+   cursor: pointer;
+}
+
+main{
+    width: 100%;
+    height:952px;
+    
+}
+.main-1{
+    /* display: none;  */
+    width: 100%;
+    height:auto;
+}
+.first-section{
+   
+    display:flex;
+    align-items:center ;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+.txt-content{
+    align-items: center;
+    font-size: 30px;
+    flex: 0 0 40%; /* Fixed 40% width */
+}
+.image-content{
+    align-items: center;
+    width: 100%;
+    flex: 0 0 60%; /* Fixed 60% width */
+}
+.image-content img {
+    max-width: 100%;
+    height: 400px;
+    border-radius: 20px;
+
+    
+}
+
+.second-section{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+    border: 5px solid rgb(106, 106, 197);
+
+
+}
+.image-2{
+   
+    display: flex;
+}
+.image-2 img{
+    width: 800px;
+    height: 500px;
+    max-width: 100%;
+} 
+.carousel-wrapper {
+    width: 1000px;
+    overflow: hidden;
+    /* border-radius: 10px; */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.carousel{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    position: relative; 
+    transition: transform 0.15s ease-in-out;
+
+}
+.slide-container img{
+    width: 1000px;
+    height: 500px;
+    /* border-radius: 20px; */
+
+}
+.slide-container {
+    min-width: 100%;
+   
+  
+  
+}
+
+
+.main-2{
+    display: none;
+    width: 100%;
+    height:auto;
+}
+
+
+
+
+/* Current Weather Section */
+.current-weather {
+    height:400px;
+    padding: 40px;
+   /* background-color: #457b9d;*/
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #f1faee;
+}
+
+.weather-info {
+    height:400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.weather-icon{
+    width: 100%;
+    align-items: center;
+}
+.weather-image{
+    height: 150px;
+    width: 150px;
+}
+
+.weather-icon h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+#date-time{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+.temperature{
+    padding: 20px;
+    width: 100%;
+    align-content: center;
+}
+.temperature h1 {
+    font-size: 30px;
+}
+
+.temperature p {
+    margin-top: 5px;
+    font-size: 30px;
+}
+.weather-details{
+    width: 100%;
+    /* display: flex; */
+    align-items: center;
+   
+}
+.weather-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.weather-detail p {
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 200;
+}
+/* 10-Day Forecast Section */
+.forecast {
+    height:500px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.forecast h2 {
+    color: #f1faee;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.forecast-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.forecast-card {
+    height: 300px;
+    width: 100%;
+    color: #f1faee;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.forecast-card p {
+    margin: 5px 0;
+    padding: 5px 0px;
+    font-size: 20px;
+}
+
+.forecast-card img{
+    height: 100px;
+    width: 100px;
+}
+
+/* footer  */
+footer div{
+    padding: 20px;
+    display:flex;
+    font-size: large;
+    background-color: #668cc2;
+    align-content: center;
+    justify-content: center;
+}
